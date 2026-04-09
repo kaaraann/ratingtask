@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs-18_x", "postgres"]
+
+[phases.build]
+cmds = ["cd backend && npm install"]
+
+[start]
+cmd = "cd backend && npm start"
+
+[variables]
+PORT = "5000"
