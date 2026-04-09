@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+console.log("CORS_ORIGIN:", process.env.CORS_ORIGIN);
+
 // Routes
 const authRoutes = require("./routes/auth");
 const adminRoutes = require("./routes/admin");
