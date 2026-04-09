@@ -22,6 +22,7 @@ const ManageStores = () => {
 
   useEffect(() => {
     fetchStores();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortBy, sortOrder]);
 
   const fetchStores = async () => {

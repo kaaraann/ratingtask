@@ -19,7 +19,6 @@ const AddStore = () => {
   const [loading, setLoading] = useState(false);
   const [successModal, setSuccessModal] = useState({ isOpen: false, storeName: "" });
   const navigate = useNavigate();
-  const { logout } = useAuth();
 
   const handleChange = (e) => {
     const { name, value } = e.target;

@@ -17,7 +17,6 @@ const AddAdmin = () => {
   const [loading, setLoading] = useState(false);
   const [successModal, setSuccessModal] = useState({ isOpen: false, userName: "" });
   const navigate = useNavigate();
-  const { logout } = useAuth();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
