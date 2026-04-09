@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { adminAPI } from "../utils/api";
-import { useAuth } from "../context/AuthContext";
 import Modal from "../components/Modal";
 import "../styles/Management.css";
 
