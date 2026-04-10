@@ -15,7 +15,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "*", // Temporarily allow all origins
+    origin: process.env.CORS_ORIGIN || "https://steadfast-growth-production-88ad.up.railway.app",
     credentials: true,
   }),
 );
